@@ -93,7 +93,7 @@ export default function Footer() {
               {/* Social */}
               <div className="mt-8 flex gap-3">
                 <a
-                  href="mailto:contact@vastro.in"
+                  href="mailto:Vastro136@gmail.com "
                   className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[#264653] shadow-sm transition hover:-translate-y-1"
                 >
                   <Mail size={18} />
@@ -174,13 +174,13 @@ export default function Footer() {
                 <div className="flex gap-3">
                   <Phone size={18} className="mt-1 text-[#2A9D8F]" />
 
-                  <a href={"tel:+919876543210"} className="text-slate-600">+91 98765 43210</a>
+                  <a href={"tel:+918076942798"} className="text-slate-600">+91 80769 42798</a>
                 </div>
 
                 <div className="flex gap-3">
                   <Mail size={18} className="mt-1 text-[#2A9D8F]" />
 
-                  <a href={"mailto:contact@vastro.in"} className="text-slate-600">contact@vastro.in</a>
+                  <a href={"mailto:contact@vastro.in"} className="text-slate-600">Vastro136@gmail.com</a>
                 </div>
 
                 <div className="flex gap-3">

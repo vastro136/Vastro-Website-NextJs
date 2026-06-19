@@ -92,14 +92,14 @@ export default function ContactUs() {
               {
                 icon: Phone,
                 title: "Call Us",
-                value: "+91 9876543210",
-                href: "tel:+919876543210",
+                value: "+91 8076942798",
+                href: "tel:+918076942798",
               },
               {
                 icon: Mail,
                 title: "Email",
-                value: "contact@vastro.in",
-                href: "mailto:contact@vastro.in",
+                value: "Vastro136@gmail.com ",
+                href: "mailto:Vastro136@gmail.com ",
               },
               {
                 icon: MapPin,
@@ -337,15 +337,14 @@ export default function ContactUs() {
 
             <div className="mt-8 flex justify-center gap-4">
               <a
-                href="tel:+919876543210"
+                href="tel:+918076942798"
                 className="rounded-xl bg-white px-6 py-4 font-semibold text-[#264653]"
               >
                 Call Now
               </a>
 
               <a
-                href="mailto:contact@vastro.in"
-                target="_blank"
+                href="mailto:Vastro136@gmail.com"
                 className="rounded-xl border border-white/20 px-6 py-4 font-semibold text-white"
               >
                 Email

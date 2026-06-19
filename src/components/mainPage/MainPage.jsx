@@ -21,7 +21,7 @@ export const MainPage = () => {
         <ProjectsShowcase/>
         <InstallationProcess/>   
         <FinalCTA/>
-        <Link className='fixed bottom-5 right-5 z-50 text-3xl p-2 rounded-xl bg-green-400' href={"tel:+919876543210"}><Phone/></Link>
+        <Link className='fixed bottom-5 right-5 z-50 text-3xl p-2 rounded-xl bg-green-400' href={"tel:+918076942798"}><Phone/></Link>
     </>
   )
 }

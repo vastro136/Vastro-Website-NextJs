@@ -51,7 +51,7 @@ export default function FinalCTA() {
                 </Link>
 
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918076942798"
                   className="inline-flex items-center gap-3 rounded-xl border border-[#D9D4CB] px-7 py-4 font-semibold text-[#264653] hover:bg-[#F8F6F1]"
                 >
                   <Phone size={18} />
