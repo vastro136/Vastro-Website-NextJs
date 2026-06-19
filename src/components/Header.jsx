@@ -155,7 +155,7 @@ export default function Header() {
         {mobileOpen && (
           <div className="lg:hidden border-t bg-white text-black">
             <div className="px-4 py-5 space-y-4">
-              <Link href="/">Home</Link>
+              <a href="/" className="block">Home</a>
               <Link href="/about" className="block">
                 About
               </Link>
