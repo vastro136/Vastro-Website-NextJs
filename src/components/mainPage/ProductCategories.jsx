@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, CreditCard } from "lucide-react";
 
 const categories = [
   {
@@ -53,11 +53,14 @@ export default function ProductCategories() {
             </h2>
           </div>
 
+        <div>
+          <h1 className="mb-10 lg:text-3xl mg:text-xl text-3xl flex items-center gap-2"><CreditCard size={30}/> EMI option also available.</h1>
           <p className="max-w-lg text-lg text-slate-600">
-            Discover premium wall systems engineered
-            to improve aesthetics, durability and
-            long-term maintenance performance.
+            Discover premium wall systems engineered to improve aesthetics,
+            durability and long-term maintenance performance.
           </p>
+        </div>
+          
         </div>
 
         {/* Cards */}
@@ -71,7 +74,7 @@ export default function ProductCategories() {
               {/* Image */}
               <div className="relative h-[320px] overflow-hidden">
                 <Image
-                priority
+                  priority
                   src={category.image}
                   alt={category.title}
                   fill
@@ -91,9 +94,7 @@ export default function ProductCategories() {
                   {category.title}
                 </h3>
 
-                <p className="mt-4 text-slate-600">
-                  {category.description}
-                </p>
+                <p className="mt-4 text-slate-600">{category.description}</p>
 
                 <div className="mt-6 flex items-center gap-2 font-semibold text-[#2A9D8F]">
                   Explore Category
@@ -105,21 +106,18 @@ export default function ProductCategories() {
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-20 grid gap-8 border-t border-[#E5DED2] pt-12 md:grid-cols-4">
+        <div className="mt-20 grid gap-8 border-t border-[#E5DED2] pt-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {[
             ["100+", "Panel Designs"],
             ["10+", "Years Durability"],
             ["3x", "Faster Installation"],
             ["100%", "After-Sales Support"],
+            ["Available", "EMI Option Also Provided"],
           ].map(([value, label]) => (
             <div key={label}>
-              <h3 className="text-4xl font-bold text-[#264653]">
-                {value}
-              </h3>
+              <h3 className="text-4xl font-bold text-[#264653]">{value}</h3>
 
-              <p className="mt-2 text-slate-600">
-                {label}
-              </p>
+              <p className="mt-2 text-slate-600">{label}</p>
             </div>
           ))}
         </div>

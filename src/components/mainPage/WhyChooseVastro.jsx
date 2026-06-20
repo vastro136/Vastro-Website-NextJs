@@ -9,6 +9,7 @@ import {
   PaintBucket,
   Building2,
   Wrench,
+  CreditCard,
 } from "lucide-react";
 
 const comparisons = [
@@ -178,6 +179,12 @@ export default function WhyChooseVastro() {
             temperature changes and daily wear while maintaining
             their appearance for years.
           </p>
+
+          {/* EMI Option Heading */}
+          <div className="mt-6 flex items-center justify-center gap-2 text-xl font-semibold text-white/90">
+            <CreditCard size={24} className="text-[#2A9D8F]" />
+            <h4>EMI option also available</h4>
+          </div>
         </div>
       </div>
     </section>

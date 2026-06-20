@@ -107,8 +107,8 @@ export default function IndustriesWeServe() {
         </div>
 
         {/* Highlight Strip */}
-        <div className="mt-20 rounded-[32px] bg-[#264653] p-10 lg:p-14">
-          <div className="grid gap-10 md:grid-cols-3">
+       <div className="mt-20 rounded-[32px] bg-[#264653] p-10 lg:p-14">
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
             <div>
               <h3 className="text-5xl font-bold text-white">
                 500+
@@ -138,8 +138,20 @@ export default function IndustriesWeServe() {
                 End-To-End Installation Support
               </p>
             </div>
+
+            {/* EMI Option Added */}
+            <div>
+              <h3 className="text-5xl font-bold text-white">
+                Available
+              </h3>
+
+              <p className="mt-2 text-white/70">
+                EMI Option Also Provided
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );

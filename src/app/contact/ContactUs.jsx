@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, Mail, MapPin, ArrowRight, Building2 } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight, Building2, CreditCard } from "lucide-react";
 import { useState } from "react";
 
 export default function ContactUs() {
@@ -135,164 +135,180 @@ export default function ContactUs() {
       {/* Contact + Form */}
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-10 lg:grid-cols-2">
-            {/* Left */}
-            <div>
-              <span className="inline-flex rounded-full border border-[#D9D4CB] px-4 py-2 text-sm font-medium text-[#264653]">
-                Get In Touch
-              </span>
+        <div className="grid gap-10 lg:grid-cols-2">
+  {/* Left */}
+  <div>
+    <span className="inline-flex rounded-full border border-[#D9D4CB] px-4 py-2 text-sm font-medium text-[#264653]">
+      Get In Touch
+    </span>
 
-              <h2 className="mt-6 text-4xl font-bold text-[#264653]">
-                Request A Free Consultation
-              </h2>
+    <h2 className="mt-6 text-4xl font-bold text-[#264653]">
+      Request A Free Consultation
+    </h2>
 
-              <p className="mt-6 text-lg text-slate-600">
-                Tell us about your project and our experts will recommend the
-                most suitable wall panel solutions for your space.
-              </p>
+    <p className="mt-6 text-lg text-slate-600">
+      Tell us about your project and our experts will recommend the
+      most suitable wall panel solutions for your space.
+    </p>
 
-              <div className="mt-10 space-y-5">
-                <div className="flex items-start gap-4">
-                  <Building2 className="text-[#2A9D8F]" size={22} />
+    <div className="mt-10 space-y-5">
+      <div className="flex items-start gap-4">
+        <Building2 className="text-[#2A9D8F]" size={22} />
 
-                  <div>
-                    <h4 className="font-semibold text-[#264653]">
-                      Residential Projects
-                    </h4>
+        <div>
+          <h4 className="font-semibold text-[#264653]">
+            Residential Projects
+          </h4>
 
-                    <p className="text-slate-600">
-                      Homes, villas, apartments and renovations.
-                    </p>
-                  </div>
-                </div>
+          <p className="text-slate-600">
+            Homes, villas, apartments and renovations.
+          </p>
+        </div>
+      </div>
 
-                <div className="flex items-start gap-4">
-                  <Building2 className="text-[#2A9D8F]" size={22} />
+      <div className="flex items-start gap-4">
+        <Building2 className="text-[#2A9D8F]" size={22} />
 
-                  <div>
-                    <h4 className="font-semibold text-[#264653]">
-                      Commercial Projects
-                    </h4>
+        <div>
+          <h4 className="font-semibold text-[#264653]">
+            Commercial Projects
+          </h4>
 
-                    <p className="text-slate-600">
-                      Offices, showrooms, retail and hospitality.
-                    </p>
-                  </div>
-                </div>
+          <p className="text-slate-600">
+            Offices, showrooms, retail and hospitality.
+          </p>
+        </div>
+      </div>
 
-                <div className="flex items-start gap-4">
-                  <Building2 className="text-[#2A9D8F]" size={22} />
+      <div className="flex items-start gap-4">
+        <Building2 className="text-[#2A9D8F]" size={22} />
 
-                  <div>
-                    <h4 className="font-semibold text-[#264653]">
-                      Dealer Partnerships
-                    </h4>
+        <div>
+          <h4 className="font-semibold text-[#264653]">
+            Dealer Partnerships
+          </h4>
 
-                    <p className="text-slate-600">
-                      Join our growing dealer network.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <p className="text-slate-600">
+            Join our growing dealer network.
+          </p>
+        </div>
+      </div>
 
-            {/* Form */}
-            <div className="rounded-[32px] border border-[#E5DED2] text-black bg-white p-8 lg:p-10">
-              <form onSubmit={formButton} className="space-y-5">
-                <div>
-                  <label className="mb-2 block font-medium text-[#264653]">
-                    Full Name
-                  </label>
+      {/* EMI Option Heading */}
+      <div className="flex items-start gap-4 pt-2 border-t border-[#E5DED2]/60">
+        <CreditCard className="text-[#2A9D8F]" size={22} />
 
-                  <input
-                    type="text"
-                    className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
-                    name="name"
-                    value={contactForm.name}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+        <div>
+          <h4 className="font-semibold text-[#264653]">
+            EMI Option Also Available
+          </h4>
 
-                <div>
-                  <label className="mb-2 block font-medium text-[#264653]">
-                    Phone Number
-                  </label>
+          <p className="text-slate-600">
+            Flexible, budget-friendly financing options for your renovation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                  <input
-                    type="tel"
-                    className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
-                    name="phone"
-                    value={contactForm.phone}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+  {/* Form */}
+  <div className="rounded-[32px] border border-[#E5DED2] text-black bg-white p-8 lg:p-10">
+    <form onSubmit={formButton} className="space-y-5">
+      <div>
+        <label className="mb-2 block font-medium text-[#264653]">
+          Full Name
+        </label>
 
-                <div>
-                  <label className="mb-2 block font-medium text-[#264653]">
-                    Email
-                  </label>
+        <input
+          type="text"
+          className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
+          name="name"
+          value={contactForm.name}
+          onChange={handleChange}
+          required
+        />
+      </div>
 
-                  <input
-                    type="email"
-                    className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
-                    name="email"
-                    onChange={handleChange}
-                    value={contactForm.email}
-                    required
-                  />
-                </div>
+      <div>
+        <label className="mb-2 block font-medium text-[#264653]">
+          Phone Number
+        </label>
 
-                <div>
-                  <label className="mb-2 block font-medium text-[#264653]">
-                    Project Type
-                  </label>
+        <input
+          type="tel"
+          className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
+          name="phone"
+          value={contactForm.phone}
+          onChange={handleChange}
+          required
+        />
+      </div>
 
-                  <select
-                    value={contactForm.projectType}
-                    required
-                    className="w-full rounded-xl border text-black border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
-                    name="projectType"
-                    onChange={handleChange}
-                  >
-                    <option>Residential</option>
-                    <option>Commercial</option>
-                    <option>Hotel</option>
-                    <option>School</option>
-                    <option>Hospital</option>
-                    <option>Dealer Inquiry</option>
-                  </select>
-                </div>
+      <div>
+        <label className="mb-2 block font-medium text-[#264653]">
+          Email
+        </label>
 
-                <div>
-                  <label className="mb-2 block font-medium text-[#264653]">
-                    Message
-                  </label>
+        <input
+          type="email"
+          className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
+          name="email"
+          onChange={handleChange}
+          value={contactForm.email}
+          required
+        />
+      </div>
 
-                  <textarea
-                    value={contactForm.msg}
-                    rows={5}
-                    className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
-                    name="msg"
-                    required
-                    onChange={handleChange}
-                  />
-                </div>
+      <div>
+        <label className="mb-2 block font-medium text-[#264653]">
+          Project Type
+        </label>
 
-                {status && (
-                  <div className="text-green-500 p-2 border hover:bg-green-100 font-semibold rounded-md">
-                    {status}
-                  </div>
-                )}
+        <select
+          value={contactForm.projectType}
+          required
+          className="w-full rounded-xl border text-black border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
+          name="projectType"
+          onChange={handleChange}
+        >
+          <option>Residential</option>
+          <option>Commercial</option>
+          <option>Hotel</option>
+          <option>School</option>
+          <option>Hospital</option>
+          <option>Dealer Inquiry</option>
+        </select>
+      </div>
 
-                <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#264653] px-6 py-4 font-semibold text-white transition hover:bg-[#1F3A56]">
-                  {loading ? "Loading..." : "Submit Inquiry"}
-                  <ArrowRight size={18} />
-                </button>
-              </form>
-            </div>
-          </div>
+      <div>
+        <label className="mb-2 block font-medium text-[#264653]">
+          Message
+        </label>
+
+        <textarea
+          value={contactForm.msg}
+          rows={5}
+          className="w-full rounded-xl border border-[#E5DED2] px-4 py-3 outline-none focus:border-[#2A9D8F]"
+          name="msg"
+          required
+          onChange={handleChange}
+        />
+      </div>
+
+      {status && (
+        <div className="text-green-500 p-2 border hover:bg-green-100 font-semibold rounded-md">
+          {status}
+        </div>
+      )}
+
+      <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#264653] px-6 py-4 font-semibold text-white transition hover:bg-[#1F3A56]">
+        {loading ? "Loading..." : "Submit Inquiry"}
+        <ArrowRight size={18} />
+      </button>
+    </form>
+  </div>
+</div>
+
         </div>
       </section>
 
@@ -308,6 +324,7 @@ export default function ContactUs() {
               { que: "Do you provide installation services?", ans: "Yes" },
               { que: "Do you work outside Uttar Pradesh?", ans: "Yes" },
               { que: "Can I become a Vastro dealer?", ans: "Yes" },
+              {que:"Do you provide emi options?",ans:"Yes we also provide flexible emi options."}
             ].map((item) => (
               <div
                 key={item.que}

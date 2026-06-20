@@ -180,7 +180,7 @@ export default function Footer() {
                 <div className="flex gap-3">
                   <Mail size={18} className="mt-1 text-[#2A9D8F]" />
 
-                  <a href={"mailto:contact@vastro.in"} className="text-slate-600">Vastro136@gmail.com</a>
+                  <a href={"mailto:Vastro136@gmail.com"} className="text-slate-600">Vastro136@gmail.com</a>
                 </div>
 
                 <div className="flex gap-3">

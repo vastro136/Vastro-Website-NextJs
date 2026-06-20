@@ -214,7 +214,7 @@ export default function IndustriesPage() {
       })}
 
       {/* COMPARISON */}
-      <section className="py-28">
+    <section className="py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="rounded-[48px] bg-[#1F3B4D] p-10 lg:p-16">
             <h2 className="text-center text-5xl font-bold text-white">
@@ -252,6 +252,10 @@ export default function IndustriesPage() {
                 [
                   "Generic Designs",
                   "Custom Solutions",
+                ],
+                [
+                  "Full Upfront Payment",
+                  "EMI Option Also Available",
                 ],
               ].map((row) => (
                 <div
